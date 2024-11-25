@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emoji Drag-and-Drop Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div id="header-container">
+      <span id="live-time">--:--:--</span>
+      <h1>Emoji Planner</h1>
+      <button id="reset-button">Reset</button>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Planner Sections -->
+    <section id="morning-planner" class="planner-section">
+      <h2>Morning</h2>
+      <div class="emoji-placeholder" data-id="morning-1"></div>
+      <!-- More placeholders -->
+      <input type="text" placeholder="Morning Notes">
+    </section>
+    <!-- Midday and Evening planners similar -->
+  </main>
+  
+  <footer>
+    <div id="emoji-deck">
+      <button id="prev-category">◀️</button>
+      <span id="current-category">Activities</span>
+      <button id="next-category">▶️</button>
+      <div id="emoji-grid">
+        <!-- Dynamically loaded emojis -->
+      </div>
+    </div>
+  </footer>
+  
+  <canvas id="background-canvas"></canvas>
+  
+  <script src="script.js"></script>
+</body>
+</html>
